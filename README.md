@@ -3,7 +3,7 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
 ## Autores ✒️
 
-* **Luis Angel Arce Monterrosa** 
+* **Luis Angel Arce Monterroza** 
 * **Ricardo Vladimir Crespin Bran** 
 * **Cristian Odir Lopez Revelo** 
 * **Sara Daniela Garcia Aparicio**
