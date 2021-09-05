@@ -1,17 +1,17 @@
 # ProyectoDPS-ecommer
 Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
-##Descripcion y Contexto
+## Descripcion y Contexto
 
-##Guia de usuario
+## Guia de usuario
 
-##Guia de instalacion
+## Guia de instalacion
 
 ## Autores ✒️
 
 * **Luis Angel Arce Monterroza** 
 * **Ricardo Vladimir Crespin Bran** 
-* **Cristian Odir Lopez Revelo** 
+* **Cristian Odir Lopez Revelo** Cancel changes
 * **Sara Daniela García Aparicio**
 * **Rodrigo Enrique Flores Velásquez** 
 
