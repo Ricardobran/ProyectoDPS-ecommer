@@ -1,6 +1,12 @@
 # ProyectoDPS-ecommer
 Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
+##Descripcion y Contexto
+
+##Guia de usuario
+
+##Guia de instalacion
+
 ## Autores ✒️
 
 * **Luis Angel Arce Monterroza** 
