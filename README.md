@@ -7,7 +7,7 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Ricardo Vladimir Crespin Bran** 
 * **Cristian Odir Lopez Revelo** 
 * **Sara Daniela García Aparicio**
-* **Rodrigo Enrique Flores Vasquez** 
+* **Rodrigo Enrique Flores Velásquez** 
 
 
 ## Licencia 📄
