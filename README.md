@@ -6,7 +6,7 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Luis Angel Arce Monterroza** 
 * **Ricardo Vladimir Crespin Bran** 
 * **Cristian Odir Lopez Revelo** 
-* **Sara Daniela Garcia Aparicio**
+* **Sara Daniela García Aparicio**
 * **Rodrigo Enrique Flores Vasquez** 
 
 
