@@ -11,9 +11,11 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
 * **Luis Angel Arce Monterroza** 
 * **Ricardo Vladimir Crespin Bran** 
-* **Cristian Odir Lopez Revelo** Cancel changes
+* **Cristian Odir Lopez Revelo** 
 * **Sara Daniela García Aparicio**
 * **Rodrigo Enrique Flores Velásquez** 
+
+## Enlaces de interes
 
 
 ## Licencia 📄
