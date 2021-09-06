@@ -16,7 +16,9 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Rodrigo Enrique Flores Velásquez** 
 
 ## Enlaces de interes🔗
+* [Enlace a Mockups]
 
+* [Enlace a Trello] 
 
 ## Licencia 📄
 
