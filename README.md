@@ -15,7 +15,7 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Sara Daniela García Aparicio**
 * **Rodrigo Enrique Flores Velásquez** 
 
-## Enlaces de interes
+## Enlaces de interes🔗
 
 
 ## Licencia 📄
