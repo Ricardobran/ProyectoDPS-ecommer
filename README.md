@@ -1,16 +1,30 @@
-# Flower Crib 
-A full frontend login system mobile application which has been connected to a hosted backend application. This was built for a video series on my [YouTube channel](https://www.youtube.com/channel/UCWUk0Y_h1bLvB8qLZ4lAS8A?sub_confirmation=1) .
+# ProyectoDPS-ecommer
+Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
-## Screenshots
-![Screenshots](assets/img/flower_crib_shots.png)
+## Descripcion y Contexto
+El siguiente proyecto consistirá en la creación de una aplicación para una tienda online, donde el usuario podrá ingresar algunos datos personales para poder realizar una compra, al igual que una simulación de la inserción de su tarjeta para posteriormente mostrar un mensaje confirmación de la compra. Se buscará la manera que este proceso sea fácil, entendible y que el usuario mantenga una interacción amigable y practica con la aplicación
 
-## Link To Video Series
-[Creating the screens & authentication](https://youtube.com/playlist?list=PLk8gdrb2DmCicLTZJWC2cCTFXloTBMBCt)
+## Guia de usuario👤
+[Segunda Entrega]
 
-## Built With
-* [Expo](https://docs.expo.io/)
-* [React Native](https://reactnative.dev/)
+## Guia de instalacion🛠⚙️
+[Segunda Entrega]
 
-## Note
-Exposed client ids (Part 5 - Google Signin) are no longer valid. So you have to follow the depicted steps to generate yours.
+## Autores ✒️
 
+* **Luis Angel Arce Monterroza** 
+* **Ricardo Vladimir Crespin Bran** 
+* **Cristian Odir Lopez Revelo** 
+* **Sara Daniela García Aparicio**
+* **Rodrigo Enrique Flores Velásquez** 
+
+## Enlaces de interes🔗
+* [Enlace a Mockups] https://drive.google.com/file/d/1iGqeKCg0t6GMWw64v_xlqvHGkEQlwhkp/view?usp=drivesdk
+
+* [Enlace a Trello] https://trello.com/b/dMVFNLue
+
+## Licencia 📄
+
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.
