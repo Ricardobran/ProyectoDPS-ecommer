@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Flower Crib",
-    "slug": "flowerCrib",
+    "name": "Proyecto DPS",
+    "slug": "proyectoDPS",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/img/login3.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

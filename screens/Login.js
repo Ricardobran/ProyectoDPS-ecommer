@@ -107,7 +107,7 @@ const Login = ({ navigation }) => {
         setGoogleSubmitting(false);
       })
       .catch((error) => {
-        handleMessage('An error occurred. Check your network and try again');
+        handleMessage('Un error ocurrio. Verifica tu conexion e intenta de nuevo');
         console.log(error);
         setGoogleSubmitting(false);
       });
@@ -115,7 +115,7 @@ const Login = ({ navigation }) => {
 
   // Persisting login
   const persistLogin = (credentials, message, status) => {
-    AsyncStorage.setItem('flowerCribCredentials', JSON.stringify(credentials))
+    AsyncStorage.setItem('Credentials', JSON.stringify(credentials))
       .then(() => {
         handleMessage(message, status);
         setStoredCredentials(credentials);
