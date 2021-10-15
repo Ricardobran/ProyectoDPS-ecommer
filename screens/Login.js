@@ -60,7 +60,7 @@ const Login = ({ navigation }) => {
 
   const handleLogin = (credentials, setSubmitting) => {
     handleMessage(null);
-    const url = 'http://192.168.1.14/APILogin/apilogin.php';
+    const url = 'https://apiphpdps.000webhostapp.com/apilogin.php';
     axios
       .post(url, credentials,{headers:{ 'Content-Type':'application/json'}})
       .then((response) => {
@@ -100,6 +100,8 @@ const Login = ({ navigation }) => {
         const { type, user } = result;
         if (type == 'success') {
           const { email, name, photoUrl } = user;
+          console.log(email);
+          console.log(name);
           persistLogin({ email, name, photoUrl }, 'Google signin successful', 'SUCCESS');
         } else {
           handleMessage('Google Signin was cancelled');
@@ -127,8 +129,9 @@ const Login = ({ navigation }) => {
   };
 
   return (
-    <KeyboardAvoidingWrapper>
     <Background source={require('./../assets/img/fondo.jpg')}>
+    <KeyboardAvoidingWrapper>
+    
       <StyledContainer>
         <StatusBar style="dark" />
         <InnerContainer>
@@ -210,8 +213,9 @@ const Login = ({ navigation }) => {
           </Formik>
         </InnerContainer>
       </StyledContainer>
-      </Background>
+     
     </KeyboardAvoidingWrapper>
+     </Background>
   );
 };
 

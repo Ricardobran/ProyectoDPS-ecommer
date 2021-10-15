@@ -12,6 +12,8 @@ import {
   WelcomeContainer,
   ButtonText,
   Line,
+  Background,
+  PageTitle1
 } from './../components/styles';
 
 // Async storage
@@ -24,44 +26,38 @@ const Welcome = () => {
   // credentials context
   const { storedCredentials, setStoredCredentials } = useContext(CredentialsContext);
 
-  const { nombre, id , correo, photoUrl } = storedCredentials;
- // console.log(storedCredentials);
+  const { email , name, photoUrl, nombre,correo } = storedCredentials;
+ console.log(storedCredentials);
 
   const AvatarImg = photoUrl
     ? {
         uri: photoUrl,
       }
-    : require('./../assets/img/login1.png');
-
-  const clearLogin = () => {
-    AsyncStorage.removeItem('Credentials')
-      .then(() => {
-        setStoredCredentials("");
-      })
-      .catch((error) => console.log(error));
-  };
+    : require('./../assets/img/profile.jpg');
 
   return (
     <>
-      <StatusBar style="light" />
+      <StatusBar style="auto" />
+      <Background source={require('./../assets/img/fondo.jpg')}>
       <InnerContainers>
-        <WelcomeImage resizeMode="cover" source={require('./../assets/img/expo-bg2.png')} />
+        <WelcomeImage resizeMode="contain" source={require('./../assets/img/expo-bg4.png')} />
 
         <WelcomeContainer>
-          <PageTitle welcome={true}>Welcome! Buddy</PageTitle>
-          <SubTitle welcome={true}>{nombre || 'Olga Simpson'}</SubTitle>
-          <SubTitle welcome={true}>{correo || 'olgasimp@gmail.com'}</SubTitle>
+          <PageTitle1>Informacion Personal</PageTitle1>
+          <SubTitle welcome={true}>{name || nombre}</SubTitle>
+          <SubTitle welcome={true}>{email || correo}</SubTitle>
 
           <StyledFormArea>
             <Avatar resizeMode="cover" source={AvatarImg} />
 
             <Line />
-            <StyledButton onPress={clearLogin}>
-              <ButtonText>Logout</ButtonText>
+            <StyledButton >
+              <ButtonText>Editar</ButtonText>
             </StyledButton>
           </StyledFormArea>
         </WelcomeContainer>
       </InnerContainers>
+      </Background >
     </>
   );
 };

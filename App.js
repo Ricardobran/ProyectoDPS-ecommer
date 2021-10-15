@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // React navigation stack
 import RootStack from './navigators/RootStack';
@@ -11,11 +11,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // credentials context
 import { CredentialsContext } from './components/CredentialsContext';
-
+import  Splash  from './components/splash';
 export default function App() {
   const [appReady, setAppReady] = useState(false);
   const [storedCredentials, setStoredCredentials] = useState("");
-
+  
+    
+  
   const checkLoginCredentials = () => {
     AsyncStorage.getItem('Credentials')
       .then((result) => {
@@ -34,6 +36,7 @@ export default function App() {
 
   return (
     <CredentialsContext.Provider value={{ storedCredentials, setStoredCredentials }}>
+      
       <RootStack />
     </CredentialsContext.Provider>
   );

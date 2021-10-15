@@ -24,11 +24,12 @@ import {
   SubTitle,
   Colors,
   Background,
+  PageTitle1
 } from './../components/styles';
 import { View, TouchableOpacity, ActivityIndicator } from 'react-native';
 
 //colors
-const { darkLight, brand, primary } = Colors;
+const { darkLight, brand, primary, tertiary } = Colors;
 
 // icon
 import { Octicons, Ionicons } from '@expo/vector-icons';
@@ -65,17 +66,13 @@ const Signup = ({ navigation }) => {
     setDob(currentDate);
   };
 
-  const showDatePicker = () => {
-    setShow('date');
-  };
-
     // credentials context
   const {storedCredentials, setStoredCredentials} = useContext(CredentialsContext);
 
   // Form handling
   const handleSignup = (credentials, setSubmitting) => {
     handleMessage(null);
-    const url = 'https://apiphpdps.000webhostapp.com/apiregistro.php';
+    const url = 'http://192.168.1.14/APILogin/apiregistro.php';
     axios
       .post(url, credentials,{headers:{ 'Content-Type':'application/json'}})
       .then((response) => {
@@ -102,41 +99,16 @@ const Signup = ({ navigation }) => {
     setMessageType(type);
   };
 
-  // Persisting login after signup
-  const persistLogin = (credentials, message, status) => {
-    AsyncStorage.setItem('Credentials', JSON.stringify(credentials))
-      .then(() => {
-        handleMessage(message, status);
-        setStoredCredentials(credentials);
-      })
-      .catch((error) => {
-        handleMessage('Error persistente de inicio de sesion');
-        console.log(error)
-      });
-  };
 
   return (
     <Background source={require('./../assets/img/fondo.jpg')}>
     <KeyboardAvoidingWrapper>
       <StyledContainer>
-      {show && (
-            <DateTimePicker
-              testID="dateTimePicker"
-              value={date}
-              mode="date"
-              is24Hour={true}
-              display="default"
-              onChange={onChange}
-              style={{
-                backgroundColor: 'yellow',
-                marginLeft:100
-              }}
-            />
-          )}
+      
         <StatusBar style="dark" />
         <InnerContainer>
-          <PageTitle>Ecommerce</PageTitle>
-          <SubTitle>Registro de Cuenta</SubTitle>
+          <PageTitle>Formulario de Compra</PageTitle>
+          <SubTitle>Ingrese sus datos</SubTitle>
 
 
           <Formik
@@ -151,9 +123,6 @@ const Signup = ({ navigation }) => {
                 values.confirmPassword == ''
               ) {
                 handleMessage('Complete todos los campos');
-                setSubmitting(false);
-              } else if (values.password !== values.confirmPassword) {
-                handleMessage('Las constraseñas no son iguales');
                 setSubmitting(false);
               } else {
                 handleSignup(values, setSubmitting);
@@ -182,16 +151,22 @@ const Signup = ({ navigation }) => {
                   icon="mail"
                 />
                 <MyTextInput
-                  label="Fecha de Cumpleaños"
-                  placeholder="YYYY - MM - DD"
+                  label="Direccion de Entrega"
+                  placeholder="Calle 3, Avenida Sur, San Marcos"
                   placeholderTextColor={darkLight}
-                  onChangeText={handleChange('dateOfBirth')}
-                  onBlur={handleBlur('dateOfBirth')}
-                  value={dob ? dob.toDateString() : ''}
-                  icon="calendar"
-                  editable={false}
-                  isDate={true}
-                  showDatePicker={showDatePicker}
+                  onChangeText={handleChange('name')}
+                  onBlur={handleBlur('name')}
+                  value={values.name}
+                  icon="location"
+                />
+                <MyTextInput
+                  label="Tajeta de Credito"
+                  placeholder="XXX-XXXX-XXX"
+                  placeholderTextColor={darkLight}
+                  onChangeText={handleChange('name')}
+                  onBlur={handleBlur('name')}
+                  value={values.name}
+                  icon="credit-card"
                 />
                 <MyTextInput
                   label="Contraseña"
@@ -206,24 +181,12 @@ const Signup = ({ navigation }) => {
                   hidePassword={hidePassword}
                   setHidePassword={setHidePassword}
                 />
-                <MyTextInput
-                  label="Confirmar Contraseña"
-                  placeholder="* * * * * * * *"
-                  placeholderTextColor={darkLight}
-                  onChangeText={handleChange('confirmPassword')}
-                  onBlur={handleBlur('confirmPassword')}
-                  value={values.confirmPassword}
-                  secureTextEntry={hidePassword}
-                  icon="lock"
-                  isPassword={true}
-                  hidePassword={hidePassword}
-                  setHidePassword={setHidePassword}
-                />
+               
                 <MsgBox type={messageType}>{message}</MsgBox>
 
                 {!isSubmitting && (
                   <StyledButton onPress={handleSubmit}>
-                    <ButtonText>Registrarse</ButtonText>
+                    <ButtonText>Comprar Ahora</ButtonText>
                   </StyledButton>
                 )}
                 {isSubmitting && (
@@ -232,13 +195,6 @@ const Signup = ({ navigation }) => {
                   </StyledButton>
                 )}
 
-                <Line />
-                <ExtraView>
-                  <ExtraText>¿Ya tienes una cuenta? </ExtraText>
-                  <TextLink onPress={() => navigation.navigate('Login')}>
-                    <TextLinkContent>Inicia Sesión</TextLinkContent>
-                  </TextLink>
-                </ExtraView>
               </StyledFormArea>
             )}
           </Formik>
@@ -253,26 +209,11 @@ const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, i
   return (
     <View>
       <LeftIcon>
-        <Octicons name={icon} size={30} color={brand} />
+        <Octicons name={icon} size={30} color='black' />
       </LeftIcon>
       <StyledInputLabel>{label}</StyledInputLabel>
 
-      {isDate && (
-        <TouchableOpacity onPress={showDatePicker}>
-          <StyledTextInput {...props} />
-        </TouchableOpacity>
-      )}
       {!isDate && <StyledTextInput {...props} />}
-
-      {isPassword && (
-        <RightIcon
-          onPress={() => {
-            setHidePassword(!hidePassword);
-          }}
-        >
-          <Ionicons name={hidePassword ? 'md-eye-off' : 'md-eye'} size={30} color={darkLight} />
-        </RightIcon>
-      )}
     </View>
   );
 };

@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flex: 1,
-    backgroundColor: '#D683FA',
+    backgroundColor: '#6D28D9',
   },
   logoText: {
     fontSize: 35,

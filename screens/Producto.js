@@ -1,58 +1,49 @@
 import React from "react";
-import { StyleSheet, View, Text, Pressable,SafeAreaView,ScrollView } from "react-native";
+import { StyleSheet, View, Text, Pressable,ScrollView } from "react-native";
 import SearchBar from "./../components/searchBar";
 import Categorias from "./../components/Categorias";
 import ItemsHome from "./../components/ItemsHome";
+import ItemsProducto from "./../components/itemsProducto";
 import {StyledContainer,Background,InnerContainer} from './../components/styles';
-import { StatusBar } from 'expo-status-bar';
-// keyboard avoiding view
-import KeyboardAvoidingWrapper from './../components/KeyboardAvoidingWrapper';
-export default function ScreenA() {
+export default function App({navigation}) {
   return (
-<>
-    
-      <StatusBar style="auto" />
+
     <Background source={require('./../assets/img/fondo.jpg')}>
-    
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.searchbar}>
         <SearchBar />
       </View>
-      <View style={styles.Body}>
       
-        <Categorias /> 
-         
-        <ScrollView>  
-        <ItemsHome />
-        </ScrollView>
+      <View style={styles.Body}>
+        <Text style={styles.titulo}>Detalle de Producto</Text>
+        <ItemsProducto navigation={navigation} />
       </View>
-
     </View>
-    
-   </Background>
-   
-</>
+    </ScrollView>
+    </Background>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    
-    
-  },
-  text: {
-    fontSize: 40,
-    fontWeight: "bold",
-    margin: 10,
+   
   },
   searchbar: {
     width: "100%",
-    marginTop: 10,
+    marginVertical: 10,
     alignItems: "center",
   },
-  Body: {
-    flexDirection: "row",
+  titulo:{
+    fontSize:25,
+    textAlign:'center',
+    fontWeight: 'bold',
   },
-
+  Body: {
+    flex:1,
+    backgroundColor: 'rgba(60,60,60,0.3)',
+    width:300,
+    marginLeft:35
+  },
 });

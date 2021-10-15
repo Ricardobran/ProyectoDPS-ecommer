@@ -72,7 +72,7 @@ export const Avatar = styled.Image`
 `;
 
 export const WelcomeImage = styled.Image`
-  height: 50%;
+  height: 20%;
   min-width: 100%;
 `;
 
@@ -86,8 +86,16 @@ export const PageTitle = styled.Text`
   ${(props) =>
     props.welcome &&
     `
+    padding: 26px;
     font-size: 35px;
   `}
+`;
+export const PageTitle1 = styled.Text`
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: ${Colors.tertiary};
+
 `;
 
 export const SubTitle = styled.Text`
@@ -95,6 +103,7 @@ export const SubTitle = styled.Text`
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+
   color: ${tertiary};
 
   ${(props) =>
