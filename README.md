@@ -9,7 +9,7 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Sara Daniela Garcia Aparicio**
 * **Rodrigo Enrique Flores Vasquez** 
 
-##Links de Manuales de Usuario y Tecnico E-Commerce
+## Links de Manuales de Usuario y Tecnico E-Commerce
 
 * [Enlace a Manual_Usuario] https://mega.nz/file/xUVVnSbL#V_2M9gHeah9RPp58JWJGOhBaW3Q-X-t96MSMDwZuiVc
 
@@ -17,7 +17,5 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 
 
 ## Licencia 📄
-
-
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.
