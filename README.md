@@ -13,7 +13,7 @@ El siguiente proyecto consistirá en la creación de una aplicación para una ti
 ## Autores ✒️
 
 * **Luis Angel Arce Monterroza** 
-* **Ricardo Vladimir Crespin Bran** 
+* ** Ricardo Vladimir Crespín Bran ** 
 * **Cristian Odir Lopez Revelo** 
 * **Sara Daniela García Aparicio**
 * **Rodrigo Enrique Flores Velásquez** 
