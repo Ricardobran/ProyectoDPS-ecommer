@@ -10,8 +10,11 @@ Proyecto de catedra de Desarrollo de Aplicaciones Multiplataforma
 * **Rodrigo Enrique Flores Vasquez** 
 
 ##Links de Manuales de Usuario y Tecnico E-Commerce
-<a rel="Usuario" href:"https://mega.nz/file/xUVVnSbL#V_2M9gHeah9RPp58JWJGOhBaW3Q-X-t96MSMDwZuiVc" /></a>
-<a rel="Técnico" href:"https://mega.nz/file/4dcVmarD#xK0lPI_g1y6O8MHhfhIMu7YDF0r6UlXZ35I9pQUfp9g" /></a>
+
+* [Enlace a Manual_Usuario] https://mega.nz/file/xUVVnSbL#V_2M9gHeah9RPp58JWJGOhBaW3Q-X-t96MSMDwZuiVc
+
+* [Enlace a Manual_Técnico] https://mega.nz/file/4dcVmarD#xK0lPI_g1y6O8MHhfhIMu7YDF0r6UlXZ35I9pQUfp9g
+
 
 ## Licencia 📄
 
